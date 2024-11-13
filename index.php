@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 // Get the current URI
 $requestUri = $_SERVER['REQUEST_URI'];
 
-// Remove the base directory '/onefilephp' from the URI
+// Remove the base directory '/onefilephp' from the URI.
 $basePath = '/onefilephp';
 $requestUri = str_replace($basePath, '', $requestUri);
 
